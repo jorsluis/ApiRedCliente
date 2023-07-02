@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "16600d9a-9f8d-42a1-9981-8ea8de4e383e",
+		"name": "CLIENTES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25276065"
+	},
+	"item": [
+		{
+			"name": "Get ALL By Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/persons/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"persons",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By centro Ubicacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/persons/hospital/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"persons",
+						"hospital",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By ID persona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/persons/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"persons",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"namePerson\": \"Jose Wilfran\",\r\n    \"lastNamePerson\": \"Giralfo Quitian\",\r\n    \"adressPerson\": \"Cl 77 c 94a-72\",\r\n    \"idCenterPerson\": \"3\",\r\n    \"city\": \"Bogota\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/persons/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"persons",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/persons/delete/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"persons",
+						"delete",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All By hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/hospital/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"hospital",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By id Hospital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/hospital/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"hospital",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cliente By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPersonn\": 16,\r\n    \"namePerson\": \"Pedro pa  \",\r\n    \"lastNamePerson\": \"Pepe Pillo \",\r\n    \"adressPerson\": \"calle 77a 17-07\",\r\n    \"idCenterPerson\": \"4\",\r\n    \"city\": \"Bogota\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/cliente/api/persons/update/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"cliente",
+						"api",
+						"persons",
+						"update",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
